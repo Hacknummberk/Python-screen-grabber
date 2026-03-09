@@ -23,15 +23,15 @@ Python packages:
 
 1. Install Python if it is not already installed.
 
-2. Install dependencies.
+2. Install dependencies:
 
 pip install -r requirements.txt
 
 ## Files
 
-screenshot_monitor.py
-requirements.txt
-README.md
+screenshot_monitor.py  
+requirements.txt  
+README.md  
 
 ## Running the Program
 
@@ -53,63 +53,63 @@ screenshot_2026-03-09_21-14-40.png
 
 ## Folder Structure
 
+```
 screenshots/
     screenshot_YYYY-MM-DD_HH-MM-SS.png
     capture_log.txt
-
+```
 ## Stopping the Program
 
 Press:
 
-CTRL + C
+``CTRL + C``
 
-The program will ask for a password.
+The program will request a password.
 
-Enter the configured password to stop the program.
-
+If the correct password is entered, the program will stop.  
 If the password is incorrect, the program will continue running.
 
 ## Configuration
 
 Inside the script you can modify:
 
-CAPTURE_INTERVAL
+``CAPTURE_INTERVAL``
 
 Example:
 
-CAPTURE_INTERVAL = 30
+``CAPTURE_INTERVAL = 30``
 
-This means screenshots will be captured every 30 seconds.
+Meaning screenshots are captured every 30 seconds.
 
 Other examples:
 
 5   = every 5 seconds  
 60  = every 1 minute  
-300 = every 5 minutes
+300 = every 5 minutes  
 
-You can also change the stop password in the script.
+You can also change the stop password:
 
-STOP_PASSWORD = "yourpassword"
+``STOP_PASSWORD = "yourpassword"``
 
 ## Log File
 
-Every screenshot event is recorded in:
+Every capture event is recorded in:
 
-capture_log.txt
+``capture_log.txt``
 
 Example:
+```
+2026-03-09_21-14-10 | CAPTURED | screenshots/screenshot_2026-03-09_21-14-10.png  
+2026-03-09_21-14-40 | CAPTURED | screenshots/screenshot_2026-03-09_21-14-40.png  
+```
+Errors will also be recorded in the log.
 
-2026-03-09_21-14-10 | CAPTURED | screenshots/screenshot_2026-03-09_21-14-10.png
-2026-03-09_21-14-40 | CAPTURED | screenshots/screenshot_2026-03-09_21-14-40.png
+## Disclaimer
 
-If an error occurs it will also be recorded.
+This software is provided for educational, documentation, and legitimate system monitoring purposes only.
 
-## Use Case
+The author of this project is **not responsible for any misuse, abuse, or illegal use of this software**.
 
-This program can be used for:
+Users are responsible for ensuring that their use of this software complies with all applicable laws, regulations, and organizational policies.
 
-- automated documentation
-- visual audit trails
-- system monitoring
-- compliance logging
-- automated visual record keeping
+Do not use this software to monitor or capture information from systems or users without proper authorization.
